@@ -5,13 +5,15 @@ const home = (function () {
     const subheadingText = 'A little less text';
     const menuButtonText = 'Menu';
     const container = document.querySelector('#content');
-
-    const headline = component('h2', '.home', headlineText, 'home-headline');
-    const subheading = component('p', '.home', subheadingText, 'home-subheading');
-    const menuButton = component('button', '.home', menuButtonText, 'home-menu-button');
+    
+    const homeContainer = component('div', '.home', '', 'home-container');
+    const headline = component('h2', '.home-container', headlineText, 'home-headline');
+    const subheading = component('p', '.home-container', subheadingText, 'home-subheading');
+    const menuButton = component('button', '.home-container', menuButtonText, 'home-menu-button');
 
     function render() {
         container.classList.add('home');
+        homeContainer.render();
         headline.render();
         subheading.render();
         menuButton.render();
