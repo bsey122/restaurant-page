@@ -61,10 +61,17 @@ const menu = (function () {
             }
         }
     }
+
+    function render() {
+        menuContainer.render();
+        menuHeading.render();
+        createMenu();
+    }
     return {
         menuContainer,
         menuHeading,
         createMenu,
+        render,
     };
 })();
 
