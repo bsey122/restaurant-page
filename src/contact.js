@@ -8,7 +8,6 @@ const contact = (function () {
     const _contactEmailText = 'Email: restaurant@pizza.com';
 
     const _container = document.querySelector('#content');
-    _container.classList.add('contact');
 
     const contactContainer = component('div', '.contact', '', 'contact-container');
     const contactHeader = component('h2', '.contact-container', _contactHeaderText, 'contact-header');
@@ -18,6 +17,7 @@ const contact = (function () {
     const contactEmail = component('p', '.contact-container', _contactEmailText);
 
     function render() {
+        _container.classList.add('contact');
         contactContainer.render();
         contactHeader.render();
         contactHeadline.render();
