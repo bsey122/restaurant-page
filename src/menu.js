@@ -31,7 +31,6 @@ const menu = (function () {
     const _menuHeadingText = 'What\'s on the menu?';
 
     const _container = document.querySelector('#content');
-    _container.classList.add('menu');
 
     const menuContainer = component('div', '.menu', '','menu-container');
     const menuHeading = component('h2', '.menu-container', _menuHeadingText, 'menu-head-title');
@@ -63,6 +62,7 @@ const menu = (function () {
     }
 
     function render() {
+        _container.classList.add('menu');
         menuContainer.render();
         menuHeading.render();
         createMenu();
