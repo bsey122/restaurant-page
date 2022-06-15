@@ -17,6 +17,15 @@ const contact = (function () {
     const contactHeadline = component('p', '.contact-container', _contactHeadlineText);
     const contactEmail = component('p', '.contact-container', _contactEmailText);
 
+    function render() {
+        contactContainer.render();
+        contactHeader.render();
+        contactHeadline.render();
+        contactPhone.render();
+        contactAddress.render();
+        contactEmail.render();
+    }
+
     return {
         contactContainer,
         contactHeader,
@@ -24,6 +33,7 @@ const contact = (function () {
         contactAddress,
         contactHeadline,
         contactEmail,
+        render,
     }
 })();
 
