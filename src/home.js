@@ -10,7 +10,13 @@ const home = (function () {
     const headline = component('h2', '.home', headlineText, 'home-headline');
     const subheading = component('p', '.home', subheadingText, 'home-subheading');
     const menuButton = component('button', '.home', menuButtonText, 'home-menu-button');
-    return {headline, subheading, menuButton};
+
+    function render() {
+        headline.render();
+        subheading.render();
+        menuButton.render();
+    }
+    return {headline, subheading, menuButton, render};
 })();
 
 export default home;
