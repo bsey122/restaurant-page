@@ -20,8 +20,8 @@ const contact = (function () {
         _container.classList.add('contact');
         contactContainer.render();
         contactHeader.render();
-        contactHeadline.render();
         contactPhone.render();
+        contactHeadline.render();
         contactAddress.render();
         contactEmail.render();
     }
