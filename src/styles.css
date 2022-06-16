@@ -1,0 +1,92 @@
+:root {
+    --dark-color: rgba(0, 0, 0, 0.70);
+}
+body {
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--dark-color);
+}
+
+.home-container,
+.menu-container,
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 20px;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    background-color: var(--dark-color);
+    border-radius: 5px;
+}
+
+.home-container,
+.contact-container {
+    align-items: center;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid thin white;
+}
+
+.menu-head-title,
+.contact-header {
+    align-self: center;
+}
+
+nav > button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+nav > .active {
+    border-bottom: thin solid white;
+}
+
+.home-menu-button {
+    color: white;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 16px 32px;
+    font-size: 1rem;
+    transition-duration: 0.4s;
+    margin: 1rem 0;
+}
+
+.home-menu-button:hover {
+    background-color: white;
+    color: black;
+}
+
+p,
+h3 {
+    margin: 0.5rem 0;
+}
+
+.home-container > p {
+    margin: 1rem 0;
+}
